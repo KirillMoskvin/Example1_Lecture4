@@ -10,10 +10,10 @@ VALUES ('Project1'),
 
 INSERT INTO SALARIES
 
-SELECT id, 'Lead'
+SELECT id, 'Lead', 50000
 FROM employee
 WHERE name = 'Ivanov'
 UNION
-SELECT id, 'Senior'
+SELECT id, 'Senior', 40001
 FROM employee
 WHERE name = 'Petrov';
